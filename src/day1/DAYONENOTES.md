@@ -149,3 +149,39 @@ Array's are contiguous bits of data strung together. ["back", "to", "Back]
 Each memory address has a unique location.
 
 In the context of this course: Array is not a list. 
+
+Going back to why this is not an array. const a = []
+Array's have special operations that you can perfom on an array that you can not perform on other data types. 
+
+It looks like one - but it's principly not one. 
+
+Arrays: 
+- Get back an index.
+- Insertion at a specific index.
+- Deletion at a specific index.
+
+Insertion: 
+- insertion is not insertion, it's over-writing at a specific index.
+
+Deletion: 
+- Technically, you cannot delete something.
+- One of the ways we can 'delete' an index value is setting it to... DRUM ROLL... [14714] ---> [0]
+
+There it is
+Get
+insertion
+deletion
+
+BACK TO BIG O
+
+What is the big(O) getting an index out of an array[];
+
+constant time = O(1)
+Definition: if the runtime of the algorithm does NOT depend on the data size of the input.
+Example: if you DO know the location of the index of the data you want to get.
+
+linear time = O(n)
+Definition: if the runtime execution is said to grow linearly, based on the data size of the input.
+There is a direct and proportional relationship to the size of the input and the time it takes to execute that input.
+Example: A simple loop over an array that the runtime grows proportionally to the number of indeces in the array.
+
