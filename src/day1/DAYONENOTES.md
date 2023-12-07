@@ -34,5 +34,90 @@ EX: function sum_char_codes(n: string): number {
 
 What is the simplest way to identify complexity?
 Psssssst! Look for Looooooooops 🔂
+12/07/23
+
+OR ---> where does the alogrithm loop over the input?
+
+# Basic concepts of Big(O)
+1. Growth is respect to input.
+2. Drop contstants (Theoretically they do not matter.)
+    - We are intersted in the upper bound of the algorithm (growth)
+    - The constant eventually becomes irrelevant. 
+3. We generally check for the worst case scenario (measurement of run-time). 
+
+Look for loops
+Growth with respect to input.
 
 
+What big O notation is this alogrithm? === O(Nˆ2) 
+NOTE: option + I === ˆ
+
+What's the running time
+If the previous was O(N), what's this?
+22
+function sum_char_codes(n: string): number {
+    let sum = 0;
+    for (let i = 0; i < n.length; ++i) {
+        sum += n.charCodeAt(i);
+    }
+
+    for (let i = 0; i < n.length; ++i) {
+        sum += n.charCodeAt(i);
+    }
+
+    return sum;
+}
+
+How O(Nˆ2) works: 
+Take the following:
+
+N = 1, O(10N) = 10, O(N^2) = 1
+
+
+N = 5, O(10N) = 50, O(N^2) = 25
+
+
+N = 100, O(10N) = 1,000, O(N^2) = 10,000 // 10x bigger
+
+
+N = 1000, O(10N) = 10,000, O(N^2) = 1,000,000 // 100x bigger
+
+
+N = 10000, O(10N) = 100,000, O(N^2) = 100,000,000 // 1000x bigger
+
+# A counter intuitive assumption: O(N) vs. O(nˆ2)
+There are sometimes where O(nˆ2) is faster than O(n) with respect to smaller inputs.
+
+We are not worried about exact time! Not exact cpu units nor exact time. Just an estimate.
+
+O(N^2)
+I can think of this similarly to calculating the area of a square. Or can think in terms of a graph.
+Checking every value x and y axis. 
+function sum_char_codes(n: string): number {
+    let sum = 0;
+    for (let i = 0; i < n.length; ++i) {
+        for (let j = 0; j < n.length; ++j) {
+            sum += charCode;
+        }
+    }
+
+    return sum;
+}
+
+O(N^3)
+I can conceptualize this as similar to matrix multiplication.
+function sum_char_codes(n: string): number {
+    let sum = 0;
+    for (let i = 0; i < n.length; ++i) {
+        for (let j = 0; j < n.length; ++j) {
+            for (let k = 0; k < n.length; ++k) {
+                sum += charCode;
+            }
+        }
+    }
+    return sum;
+}
+
+O(N log N) is done with Quick Sort Algorithms
+
+O(log N)
