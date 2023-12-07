@@ -121,3 +121,31 @@ function sum_char_codes(n: string): number {
 O(N log N) is done with Quick Sort Algorithms
 
 O(log N)
+
+## Arrays as a Data Structure:
+
+if const array = []; !== array THEN WHAT IS IT???
+
+What is an array? 
+- An array is a contiguous memory space that contains a certain number of bytes.
+- Byte is a unit of memory that is eight binary digits long.
+[0, 1, 2, 3, 4, 5]
+
+Memory is WHAT you tell the compiler to interpret it as...
+For example: the computer can interpret index 0 as 32bit, index: 5 === 64bit, ... ,]
+
+Ex: int[3]
+I have three ints, that are in CONTIGUOUS space, 
+
+a = int[3]
+
+a[0]
+Telling the computer: 
+1. Go to the memory address of a.
+2. Multiply the offset of zero by how big my type is 
+
+# Lets talk about walking memory bits in an array.
+Array's are contiguous bits of data strung together. ["back", "to", "Back]
+Each memory address has a unique location.
+
+In the context of this course: Array is not a list.
