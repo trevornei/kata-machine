@@ -132,7 +132,7 @@ What is an array?
 [0, 1, 2, 3, 4, 5]
 
 Memory is WHAT you tell the compiler to interpret it as...
-For example: the computer can interpret index 0 as 32bit, index: 5 === 64bit, ... ,]
+[For example: the computer can interpret index 0 as 32bit, index: 5 === 64bit, ... ,]
 
 Ex: int[3]
 I have three ints, that are in CONTIGUOUS space, 
@@ -148,4 +148,4 @@ Telling the computer:
 Array's are contiguous bits of data strung together. ["back", "to", "Back]
 Each memory address has a unique location.
 
-In the context of this course: Array is not a list.
+In the context of this course: Array is not a list. 
