@@ -127,6 +127,13 @@ O(log N)
 if const array = []; !== array THEN WHAT IS IT???
 
 What is an array? 
+- Arrays are FIXED SIZE.
+- This means that you cannot grow array's.
+- Technically there are no: 
+    - insertAt() 
+    - push()
+    - pop()
+    - Additionally: you can write these methods() and fn()'s, it's just that their names are slightly misleading.
 - An array is a contiguous memory space that contains a certain number of bytes.
 - Byte is a unit of memory that is eight binary digits long.
 [0, 1, 2, 3, 4, 5]
@@ -184,4 +191,17 @@ linear time = O(n)
 Definition: if the runtime execution is said to grow linearly, based on the data size of the input.
 There is a direct and proportional relationship to the size of the input and the time it takes to execute that input.
 Example: A simple loop over an array that the runtime grows proportionally to the number of indeces in the array.
+
+### End of Arrays & Data Structures.
+
+### Start of Arrays Q&A:
+Traditonal Arrays: (Static Arrays & Trad)
+There are no array methods.
+Very old school languages - THERE IS NOT EVEN A .LENGTH (((WHOAAAAA)))
+Instead you would have to pass the length PUS a pointer to the begining of your array.
+
+C Programs: any entry point is the above.
+
+# Time Stamp: 56 seconds.
+
 
