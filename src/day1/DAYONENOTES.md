@@ -204,3 +204,10 @@ C Programs: any entry point is the above.
 
 # Time Stamp: 56 seconds.
 
+### Array's Q&A 
+
+In JS and Java there is a literal array underneath the hood... but it's very underneath the hood.
+
+How big is the array? How big is the buffer size? 
+Everytime you use the .push() or .pop() methods - JS automatically adds 5 units for you to use.
+--> Here's the thing. This is NOT performant.
