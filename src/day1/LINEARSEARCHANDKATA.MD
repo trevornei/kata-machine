@@ -18,3 +18,19 @@ JS Arrays can be sparse; The arays can have "empty spots" where the data is not 
 The dynamic nature of JS comes with a huge performance hit at scale.
 
 Set of assumptions that we will work with. 
+
+# Core Competency: Abstraction --> whiteboard visualization --> Code
+
+We are going to start with the most simplest algorithm... Linear Search!
+
+a[0 ---> n]
+search(arr, v)
+similar of indexOf() 
+
+What is the O Notation of this algorithm?
+<--- Review ---> 
+1. Growth is respect to input.
+2. Constants are dropped.
+3. Worst case is usually the way we measure. 
+
+Worst Case Scenario: This algorithm grows linearly through the array. 
