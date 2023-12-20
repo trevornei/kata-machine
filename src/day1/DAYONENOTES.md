@@ -211,3 +211,36 @@ In JS and Java there is a literal array underneath the hood... but it's very und
 How big is the array? How big is the buffer size? 
 Everytime you use the .push() or .pop() methods - JS automatically adds 5 units for you to use.
 --> Here's the thing. This is NOT performant.
+
+# Off by one Algorithm
+# IC --> You have to ask yourself IS my data set ordered?
+
+- If your array is ordered, you do not need to from index 0 and validate if [0] === i;
+- INSTEAD --> you can optimize you algorithm. 
+
+This provides the opportunity to optimize WHERE you are performing you Linear Search alogrithm. 
+Example: 
+
+[Skip 10% , Check and skip 10% incrementally, Oooops too far go back & linear Search <---]
+What is the worst possible case of this algorithm?
+- Go all the way to the end of the array without finding the element.
+- What is the run time?
+    1. 10 operations of jumping?
+    2. Now what are we looking at???
+    2.(.5) O(10 + 1N)
+
+    ### Remember what rule number TWO was? IGNORE CONSTANTS!!!
+    This is now converted to
+    - 2. O(N) 
+    - 3. In theory, this is the same as linear search.
+
+    What is a different way to jump? 
+
+    [alsdjfals dfa, lasjdfl ajsdf asdf, lasjdfaklsdfjalsdf, alsdflajsdfl ajsdf]
+    1. Check if the middle value is === v? 0( 1/2N )
+    2. Keep halfing N until the condition is met.
+    3. EX: 1/2N, N/4, N/8, N/16, ect...
+
+    IF THE INPUTS ARE HALF AT EACH STEP...
+    It is either O(LogN) || O(NLogN)
+
