@@ -243,4 +243,33 @@ What is the worst possible case of this algorithm?
 
     IF THE INPUTS ARE HALF AT EACH STEP...
     It is either O(LogN) || O(NLogN)
+    Above Looking at a value and dividing it in half.
 
+# Video: Pseudo Code Binary Search
+do {
+    search(arr, low, high, needle) {
+        if (value is truthy ) {
+            return true
+        } else if (value > m) {
+            // Adjust the low end and put it infront of the midpoint.
+            lo = m + 1;
+        } else {
+            hi = m
+        }
+    }
+} while (lo < hi) 
+return false
+
+
+### From: https://www.youtube.com/watch?v=KXJSjte_OAI
+### Title: How Binary Search Makes Computers Much, Much Faster
+There are only two ways for a computer to do a seach
+1. Linearly through the data 
+2. Binary Search
+
+- You can only do a binary search on data that is ordered.
+With 11 cards, binary search does not make much of a difference.
+With 100,000,000 pieces of data it is Crazy fast. 
+
+A Clustered index is list that is in alphabetical order.
+"As with all things in computer science, there is a tradoff between space and time."
